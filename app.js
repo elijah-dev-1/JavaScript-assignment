@@ -9,13 +9,13 @@ const studentID = `STU-00123`;
 const isEnrolled = true;
 const graduationDate = null;
 
-console.log(firstName);
-console.log(lastName);
-console.log(age);
-console.log(studentID);
-console.log(gpa);
-console.log(isEnrolled);
-console.log(graduationDate);
+console.log("First Name:", firstName);
+console.log("Last Name:", lastName);
+console.log("Age:", age);
+console.log("Student ID:", studentID);
+console.log("GPA:", gpa);
+console.log("Is Enrolled:", isEnrolled);
+console.log("Graduation Date:", graduationDate);
 
 
 //change first name to nickname
@@ -49,16 +49,21 @@ console.log("remainder:", totalScore %7);
 
 //   TYPE CONVERSION
 let studentAge = "19";
+// parseInt converts the string into a whole number
+
 studentAge = parseInt(studentAge);
 
 
 let examScore = "74.5";
+// parseFloat converts the string into a decimal number
 examScore = parseFloat(examScore);
 
 let passMark = "50";
+// Number converts the string into a number
 passMark = Number(passMark);
 
 let studentName = 101;
+// String converts the number into text
 studentName = String(studentName);
 
 
@@ -69,8 +74,16 @@ console.log(typeof studentName, studentName);
 
 console.log(examScore > passMark);
 
+
 // TASK 4 — CONDITIONAL STATEMENTS
+
 let score = 73;
+
+// Previous test runs:
+// Score: 75 | Grade: A — Distinction
+// Score: 65 | Grade: B — Merit
+// Score: 55 | Grade: C — Pass
+
 let grade;
 
 if (score >= 70) {
@@ -91,4 +104,4 @@ else {
     grade = ("F — Fail");
 }
 
-console.log(`Score: ${score} | Grade: $ {grade}`);
+console.log(`Score: ${score} | Grade: ${grade}`);
